@@ -52,5 +52,19 @@ export async function findLastBlock() {
  */
 export async function createBlock(contenu) {
     // A coder
+    const id = 1
+    const nom = contenu.nom
+    const don = contenu.don
+    const date = getDate()
+
+    const newBlock = {"id":id, "nom":nom,"don":don,"date":date}
+
+    const lalala = findBlocks()
+    //await writeFile(path, newBlock, ...lalala)
+    console.log("Dans la fonction createBlock")
+    console.log()
+
+    return findBlocks()
+
 }
 
