@@ -35,6 +35,16 @@ fastify.after(() => {
             }
         }
     })
+
+    fastify.route({
+        method: 'GET',
+        url: '/autre',
+        handler: async (req, reply) => {
+            return {
+                replique: 'jamais vu game of thrones'
+            }
+        }
+    })
 })
 
 fastify.setErrorHandler(function (err, req, reply) {
