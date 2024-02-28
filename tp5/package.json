@@ -12,6 +12,7 @@
   "author": "DUBOIS Corentin",
   "license": "ISC",
   "dependencies": {
+    "@fastify/basic-auth": "^5.1.1",
     "fastify": "^4.26.1",
     "mongoose": "^8.2.0"
   }
